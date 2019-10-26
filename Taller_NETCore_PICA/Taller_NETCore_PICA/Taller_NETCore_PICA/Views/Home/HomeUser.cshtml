@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "HomeUser";
+}
+
+<h2>Bienvenido Usuario</h2>
+
+<h3>Ahora tienes permiso para acceder a todos los recursos personalizados de este sitio web.</h3>
+
+<div class="jumbotron">
+    <h1 class="display-4">Bievenido</h1>
+    <p class="lead">Somos una empresa dedicada al desarrollo de Software y mucho más para tu empresa.</p>
+    <hr class="my-4">
+    <p>Puedes tomar contacto con nosotros cuando desees.</p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una empresa dedicada al desarrollo de Software y mucho más para tu empresa.</p>        
+        <ul>
+            <li><a href=@Url.Action("About","Home")>¿Quiénes somos?</a></li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h2>Contáctanos</h2>
+
+        <p>En este espacio podrá dejarnos cualquier comentario o sugerencia que desees sea tenida en cuenta por nosotros</p>
+        <ul>
+            <li><a href="@Url.Action("Contact","Home")">Toma contacto con nosotros</a></li>
+        </ul>
+    </div>
+
+</div>
